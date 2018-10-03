@@ -1,0 +1,45 @@
+/* miniprogram/pages/add/add.wxss */
+.add-container {
+  width: 100%;
+  height: 100vh;
+  background: #f6f6f6;
+}
+
+textarea {
+  width: 100%;
+  height: 88vh;
+  padding: 10px;
+  box-sizing: border-box;
+  letter-spacing: 2px;
+  background: none;
+}
+.confirm {
+  width: 100%;
+  /* height: 5vh;  */
+  position: fixed;
+  bottom: 20rpx;
+  left: 0;
+  z-index: 999;
+}
+.confirm-btn {
+  /* float: right; */
+  margin-right: 30rpx;
+  line-height: 5vh;
+  background: #7EAAF3;
+  position: absolute;
+  left: 50%;
+  bottom: 20rpx;
+  transform: translateX(-50%);
+  width: 100rpx;
+  height: 100rpx;
+  padding: 0;
+  border-radius: 50%;
+  z-index: 999;
+}
+.confirm-btn image {
+  width: 100%;
+  height: 100%;
+}
+.padding {
+  padding-bottom: 450rpx;
+}

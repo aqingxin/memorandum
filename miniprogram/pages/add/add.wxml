@@ -1,0 +1,10 @@
+<view class="add-container">
+  <form bindsubmit="fSubmit">
+    <textarea name="textarea" focus='{{autoFoucs}}' show-confirm-bar="" adjust-position value="{{value}}" />
+    <view class='confirm'>
+      <button class='confirm-btn' form-type="submit">
+        <image src='../../images/submit.png'></image>
+      </button>
+    </view>
+  </form>
+</view>
