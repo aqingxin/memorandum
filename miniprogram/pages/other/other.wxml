@@ -1,0 +1,15 @@
+<view class="other">
+  <view class='other-top'>
+    <view class='userInfo' wx:if="{{!userInfoShow}}">
+      <image src="{{userInfo.avatarUrl}}"></image>
+      <view>
+        <text>{{userInfo.nickName}}</text>
+      </view>
+    </view>
+    <button open-type='getUserInfo' bindgetuserinfo="onGotUserInfo" wx:else>授权</button>
+  </view>
+  <view class='list'>
+    <view class='list-item'>V1.0.0</view>
+    <view class='list-item'>版权所有:星辰工作室</view>
+  </view>
+</view>
