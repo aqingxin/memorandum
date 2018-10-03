@@ -1,0 +1,32 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- <view class='search'>
+    <label>
+      <image src='../../images/search.png'></image>
+    </label>
+    <input type="text" placeholder='搜索...' bindinput='search' />
+  </view> -->
+  <view class='Memorandum-list'>
+    <view class='items' wx:for='{{dataList}}' wx:key="index">
+      <view data-item="{{item}}" class='list-item'>
+        <view class='item-left' data-item="{{item}}" bindtap='jump'>
+          <view class='item-title'>{{item.content}}</view>
+          <view class='item-date'>{{item.date}}</view>
+        </view>
+        <view class='item-menu' data-item="{{item}}" bindtap='menu'>
+          <image src='../../images/menu.png'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <text class='data-length'>共{{dataList.length}}条记录</text>
+  <view class='add-button'>
+    <navigator  wx:if="{{isLogin}}" url='../add/add?type=add'>+</navigator>
+    <button 
+      open-type="getUserInfo" 
+      bindgetuserinfo="onGetUserInfo"
+      class="userinfo-avatar"
+      wx:if="{{!isLogin}}"
+    >+</button>
+  </view>
+</view>
